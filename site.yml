@@ -1,0 +1,21 @@
+runtime:
+  cache_dir: ./.cache/antora
+site:
+  title: TestHub Docs
+  url: https://localhost
+
+content:
+  sources:
+  - url: https://github.com/lordofthejars/testhub.git 
+    branches: master
+    start_path: docs
+  - url: https://github.com/lordofthejars/testhubclient.git
+    branches: master
+    start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+output:
+  dir: ./public
