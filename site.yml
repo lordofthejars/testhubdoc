@@ -3,6 +3,7 @@ runtime:
 site:
   title: TestHub Docs
   url: https://localhost
+  start_page: testhub::index.adoc
 
 content:
   sources:
