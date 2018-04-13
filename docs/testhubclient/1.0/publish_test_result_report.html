@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish Test Result Report :: TestHub Docs</title>
+    <link rel="canonical" href="http://lordofthejars.github.io/testhubdoc/testhubclient/1.0/publish_test_result_report.html">
+    <meta name="generator" content="Antora 1.0.0-beta.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <a href="#">TestHub</a>
+        <span class="separator">//</span>
+        <a href="http://lordofthejars.github.io/testhubdoc">Docs</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Project</div>
+          <div class="navbar-dropdown">
+            <div class="navbar-item"><strong>GitHub</strong></div>
+            <a class="navbar-item" href="https://gitlab.com/lordofthejars/testhub">Test Hub Repository</a>
+            <a class="navbar-item" href="https://gitlab.com/lordofthejars/testhub/issues">Test Hub Issue Tracker</a>
+	    <a class="navbar-item" href="https://gitlab.com/lordofthejars/testhubclient">Test Hub Client Repository</a>
+            <a class="navbar-item" href="https://gitlab.com/lordofthejars/testhubclient/issues">Test Hub Client Issue Tracker</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="https://twitter.com/alexsotob">
+          <span class="icon">
+            <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#57aaee" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="testhubclient" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">TestHub Client</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Introduction to Test Hub Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="features.html">Features</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Get Test Hub Client</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="supported-platforms.html">System Requirements</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="installation.html">Install</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Run Test Hub Client</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="publish_test_result_report.html">Publish Test Result Report</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="delete_test_result_report.html">Delete Test Result Report</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">TestHub Client</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">TestHub</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../testhub/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">TestHub Client</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../testhub/1.0/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">TestHub Client</a></li>
+    <li class="crumb">Run Test Hub Client</li>
+    <li class="crumb"><a href="publish_test_result_report.html">Publish Test Result Report</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/lordofthejars/testhubclient/edit/master/docs/modules/ROOT/pages/publish_test_result_report.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Publish Test Result Report</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>One of the main tasks of Test Hub Client is to publish the report generated by test execution to Test Hub.
+This process implies next process in Test Hub Client:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Detect the type of project (currently only <code>Maven + Surefire</code> is supported).</p>
+</li>
+<li>
+<p>Package all test reports into a <code>.tar.gz</code> file.</p>
+</li>
+<li>
+<p>Get automatic values in case of not specified manually.</p>
+</li>
+<li>
+<p>Send request to Test Hub.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>From the point of view of Test Hub implies next things, when it receives the request:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Register a new build.</p>
+</li>
+<li>
+<p>Uncompress provided test artifacts.</p>
+</li>
+<li>
+<p>Calculate test results and update trend.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Let&#8217;s see a minimal example on how to use Test Hub Client to publish the result of a build.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">testhubclient push \ <i class="conum" data-value="1"></i><b>(1)</b>
+              --project myproject \ <i class="conum" data-value="2"></i><b>(2)</b>
+              --build 1 <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td><code>push</code> command to upload test artifacts</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><code>project</code> flag to set project that contains the test results</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td><code>build</code> flag to set which build identifier has generated the test results</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>So running previous command will connect to a Test Hub running at <code><a href="http://localhost:8000" class="bare">http://localhost:8000</a></code> set <code>commit</code> flag with current commit id and <code>branch</code> flag with current branch.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_command"><a class="anchor" href="#_command"></a>Command</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The command to indicate that you want to publish some test artifacts is <code>push</code>.</p>
+</div>
+<div class="paragraph">
+<p>This operation supports next flags:</p>
+</div>
+<table id="cli-push-flags" class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Push flags</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 41.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6668%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Format</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--project &lt;project&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the project name where test results should be stored</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>not set and <strong>mandatory</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--build &lt;build&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the build identifier that generated the test results</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>not set and <strong>mandatory</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--url &lt;url&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the URL where Test Hub is running</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p><a href="http://localhost:8000" class="bare">http://localhost:8000</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--branch &lt;branch&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Branch of current build. Used for navigating from test report to branch.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Current branch.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--commit &lt;commit&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Commit hash of current build. Used for navigating from test report to commit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Current commit id.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--build-url &lt;URL&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL where the project is built. Used for navigating from test report to build system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>not set</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--repo-url &lt;URL&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SCM location of the project. Used for navigating from test report to original source code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>not set</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--repo-type &lt;type&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Repository type is automatically from build-url parameter. But you can explicitely set using this attribute.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">github, gitlab, gogs, bitbucket</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>not set (automatic detection)</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

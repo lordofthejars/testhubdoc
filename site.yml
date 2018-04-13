@@ -2,7 +2,7 @@ runtime:
   cache_dir: ./.cache/antora
 site:
   title: TestHub Docs
-  url: https://localhost
+  url: http://lordofthejars.github.io/testhubdoc 
   start_page: testhub::index.adoc
 
 content:

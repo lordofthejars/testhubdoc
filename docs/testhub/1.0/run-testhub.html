@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Test Hub server :: TestHub Docs</title>
+    <link rel="canonical" href="http://lordofthejars.github.io/testhubdoc/testhub/1.0/run-testhub.html">
+    <meta name="generator" content="Antora 1.0.0-beta.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <a href="#">TestHub</a>
+        <span class="separator">//</span>
+        <a href="http://lordofthejars.github.io/testhubdoc">Docs</a>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Project</div>
+          <div class="navbar-dropdown">
+            <div class="navbar-item"><strong>GitHub</strong></div>
+            <a class="navbar-item" href="https://gitlab.com/lordofthejars/testhub">Test Hub Repository</a>
+            <a class="navbar-item" href="https://gitlab.com/lordofthejars/testhub/issues">Test Hub Issue Tracker</a>
+	    <a class="navbar-item" href="https://gitlab.com/lordofthejars/testhubclient">Test Hub Client Repository</a>
+            <a class="navbar-item" href="https://gitlab.com/lordofthejars/testhubclient/issues">Test Hub Client Issue Tracker</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="https://twitter.com/alexsotob">
+          <span class="icon">
+            <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#57aaee" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="testhub" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">TestHub</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Introduction to Test Hub</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="features.html">Features</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Get Test Hub</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="supported-platforms.html">System Requirements</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="installation.html">Install</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="run-testhub.html">Run Test Hub</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#registering">Registering New Project</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#configuring">Configuring Test Hub</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">TestHub</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">TestHub</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">TestHub Client</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../testhubclient/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">TestHub</a></li>
+    <li class="crumb"><a href="run-testhub.html">Run Test Hub</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/lordofthejars/testhub/edit/master/docs/modules/ROOT/pages/run-testhub.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Run Test Hub server</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Assumptions:</p>
+</div>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-check-square-o"></i> You&#8217;ve <a href="installation.html" class="page">installed Test Hub</a> using any of the methods explained there.</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> You have Test Hub CLI on <code>PATH</code> environment path variable.</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> You&#8217;ve <a href="../../testhubclient/1.0/installation.html" class="page">installed Test Hub client</a> to interact with Test Hub server.</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> You&#8217;ve run a Maven test phase (<code>mvn clean test</code>) in a none multi-module project.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_starting_test_hub"><a class="anchor" href="#_starting_test_hub"></a>Starting Test Hub</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To start Test Hub you only need to run next command from your terminal:</p>
+</div>
+<div class="paragraph">
+<p><code>~ $ testhub start</code></p>
+</div>
+<div class="paragraph">
+<p>After that you can go to <a href="http://localhost:8000" class="bare">http://localhost:8000</a> to access to the main page of Test Hub.
+If it is the first time you start Test Hub, then you will see an screen similar as:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/empty_initial_home_page.png" alt="empty initial home page">
+</div>
+<div class="title">Figure 1. Initial Home Page of Test Hub</div>
+</div>
+<div class="paragraph">
+<p>It is empty because we have not registered any project and build yet.</p>
+</div>
+<div class="paragraph">
+<p>So now everything is up and running, it is time to register first project and build.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+By default all data is stored at <code>~/.hub</code> directory. This location is configurable and we&#8217;ll cover in <a href="#configuring">configuration</a> section.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="registering"><a class="anchor" href="#registering"></a>Registering first project</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Test Hub server opens a <em>REST API</em> so anyone can interact with it without been tight to any client, but to simplify the adoption to Test Hub, there is also a <a href="../../testhubclient/1.0/index.html" class="page">Test Hub client</a> to interact with.</p>
+</div>
+<div class="paragraph">
+<p>So move to the root of the project you want to publish test results to Test Hub, and after running <code>mvn clean test</code>, run next command:</p>
+</div>
+<div class="paragraph">
+<p><code>~ $ testhubclient --project hello-world --build 1</code></p>
+</div>
+<div class="paragraph">
+<p>Notice that you can substitute the <code>project</code> name to the name of the project and the <code>build</code> represents the identifier of the build.
+Notice that in a CI/CD environment some variables are set as envirnoment variables, so you only need to reasign them to the flag.
+For example in <em>Travis CI</em>:</p>
+</div>
+<div class="paragraph">
+<p><code>~ $  testhubclient --project hello-world --build $TRAVIS_JOB_NUMBER</code></p>
+</div>
+<div class="paragraph">
+<p>Then just refresh home page <a href="http://localhost:8000" class="bare">http://localhost:8000</a> and you should see that now there is a new card box with the project.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/initial_home_page.png" alt="initial home page">
+</div>
+<div class="title">Figure 2. Initial Home Page of Test Hub</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_navigating_through_the_site"><a class="anchor" href="#_navigating_through_the_site"></a>Navigating through the site</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_project_details"><a class="anchor" href="#_project_details"></a>Project Details</h3>
+<div class="paragraph">
+<p>If you click on project name, you&#8217;ll see an image similar as:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/project_details.png" alt="project details">
+</div>
+<div class="title">Figure 3. Project Details Home Page</div>
+</div>
+<div class="paragraph">
+<p>In this page you can see the evolution of number of tests of the project, in this current case there is only one run.
+Also you can see how the duration of tests has evolved as well as the duration of last execution.</p>
+</div>
+<div class="paragraph">
+<p>Notice that then there is a section where you can see each of the builds that has been registered for this project.
+In each card, build number, number of tests and if all tests suceeded or not is shown, so you can get a quick overview of the build.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_build_details"><a class="anchor" href="#_build_details"></a>Build Details</h3>
+<div class="paragraph">
+<p>You can click on build number to get build details, and you&#8217;ll see an image similar as:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/build_details.png" alt="build details">
+</div>
+<div class="title">Figure 4. Build Details Home Page</div>
+</div>
+<div class="paragraph">
+<p>In this page you can see the summary of the test execution and also a card with some icons which allows you to navigate to source code repository, branch used and commit id where build has been run.
+This information is only available if it is provided when build is registered.
+Read <a href="../../testhubclient/1.0/publish_test_result_report.html" class="page">Test Hub client documentation</a> for concrete example on how to send project build information.</p>
+</div>
+<div class="paragraph">
+<p>And finally a list of all test classes executed with results.
+If you click on test class, the list is expanded with information regarding each of the test method executed in that class:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/test_details.png" alt="test details">
+</div>
+<div class="title">Figure 5. Test Details</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="configuring"><a class="anchor" href="#configuring"></a>Configuration of Test Hub</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The command to start Test Hub is <code>start</code>.</p>
+</div>
+<div class="paragraph">
+<p>This operation supports next flags:</p>
+</div>
+<table id="cli-start-flags" class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Start flags</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 41.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6668%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Format</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">port</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the port where Test Hub is started</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">integer</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>8000</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">repository.path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path where project and build data is stored</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File Path</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p><code>~/.hub</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">config</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Location of testhub.yml configuration file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_configuration_file"><a class="anchor" href="#_configuration_file"></a>Configuration file</h3>
+<div class="paragraph">
+<p>Test Hub can also be configured by using a file instead of passing arguments.
+The file must be named <code>testhub.yml</code> and by default placed on the directory where you are starting Test Hub.
+You can change the folder where <code>testhub.yml</code> file is placed by using <code>--config</code> argument.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+CLI arguments takes more precedence than the ones configured in file.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Example of <code>testhub.yml</code></div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yml hljs" data-lang="yml">port: 8080
+repository:
+    path: /tmp</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>
