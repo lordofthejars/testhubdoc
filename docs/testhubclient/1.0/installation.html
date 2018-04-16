@@ -73,6 +73,9 @@
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="installation.html">Install</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#docker">Docker</a>
+  </li>
 </ul>
   </li>
 </ul>
@@ -173,6 +176,25 @@ mv testhubclient /usr/local/bin/testhubclient</code></pre>
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">ren testhubclient_windows_amd64.exe testhubclient.exe
 set PATH=%PATH%;&lt;testhubclient_directory&gt;</code></pre>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="docker"><a class="anchor" href="#docker"></a>Docker</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Test Hub client is also provided as Docker image.
+It is installed at <code>/usr/local/bin</code> and it is set as <code>ENTRYPOINT</code>.
+By default <code>--help</code> option is run.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="paragraph">
+<p><code>~ $  docker run -ti --rm lordofthejars/testhubclient:&lt;version&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>Just prints the help message.</p>
 </div>
 </div>
 </div>
