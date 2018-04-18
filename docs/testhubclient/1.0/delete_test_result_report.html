@@ -207,7 +207,7 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">--project &lt;project&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--project</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sets the project name where test results were stored</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
@@ -215,7 +215,7 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">--build &lt;build&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--build</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sets the build identifier that generated the test results</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
@@ -223,12 +223,50 @@
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">--url &lt;url&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--url</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sets the URL where Test Hub is running</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URL</p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p><a href="http://localhost:8000" class="bare">http://localhost:8000</a></p>
 </div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--root-ca</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PEM encoded CA&#8217;s certificate file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File path</p></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--cert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PEM encoded certificate file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File path</p></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--key</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PEM encoded private key file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File path</p></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--skip-verify</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skip verification of certifcate chain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>false</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--username</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the username to authenticate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">--password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the password to authenticate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
 </tr>
 </tbody>
 </table>
